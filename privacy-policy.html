@@ -5,63 +5,93 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kull — Privacy Policy</title>
 <meta name="description" content="Privacy policy for Kull, an Android app for keeping your Salah Streak.">
+<meta name="theme-color" content="#0F4C45">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0e1211;
-    --surface: #161b1a;
-    --text: #e6eae9;
-    --muted: #9aa5a2;
-    --accent: #2ebf6c;
-    --border: #232b29;
-  }
-  @media (prefers-color-scheme: light) {
-    :root {
-      --bg: #ffffff;
-      --surface: #f5f7f6;
-      --text: #14201c;
-      --muted: #5c6a66;
-      --accent: #12854a;
-      --border: #e2e8e6;
-    }
+    --paper: #F6F2E9;
+    --card: #FFFDF8;
+    --border: #E5DCCA;
+    --teal: #0F4C45;
+    --teal-deep: #0E4741;
+    --gold: #C0913F;
+    --gold-text: #8A621E;
+    --gold-bright: #E6C381;
+    --text: #1E2A28;
+    --text-2: #56625E;
+    --text-3: #7F8985;
   }
   * { box-sizing: border-box; }
+  html { background: var(--paper); }
   body {
     margin: 0;
-    background: var(--bg);
+    background: var(--paper);
     color: var(--text);
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    padding: 48px 16px 96px;
+    font: 16px/1.65 "Plus Jakarta Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: 28px 16px 72px;
   }
   main { max-width: 680px; margin: 0 auto; }
-  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; }
-  h2 { font-size: 1.15rem; color: var(--accent); margin: 0 0 10px; }
-  .updated { color: var(--muted); font-size: .9rem; margin-bottom: 32px; }
-  .intro { margin-bottom: 32px; }
-  section {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 20px 22px;
-    margin-bottom: 16px;
+  .brand {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 1.5rem; font-weight: 600; color: var(--teal);
+    text-decoration: none; display: inline-block; margin-bottom: 18px;
   }
-  section p { margin: 0 0 12px; }
+  .hero {
+    position: relative; overflow: hidden;
+    background: var(--teal); color: #fff;
+    border-radius: 22px; padding: 26px 24px 24px; margin-bottom: 18px;
+  }
+  .hero::after {
+    content: ""; position: absolute; right: -28px; top: -28px;
+    width: 120px; height: 120px; border: 1px solid rgba(230,195,129,.35);
+    transform: rotate(18deg);
+  }
+  .hero::before {
+    content: ""; position: absolute; right: -6px; top: -40px;
+    width: 120px; height: 120px; border: 1px solid rgba(230,195,129,.22);
+    transform: rotate(40deg);
+  }
+  .eyebrow {
+    font-size: .72rem; font-weight: 600; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--gold-bright); margin: 0 0 6px;
+  }
+  h1 {
+    font-family: "EB Garamond", Georgia, serif; font-weight: 600;
+    font-size: 2.1rem; line-height: 1.15; margin: 0 0 8px; color: #fff;
+  }
+  .hero p { margin: 0; color: rgba(255,255,255,.82); }
+  .rule { width: 36px; height: 2px; background: var(--gold); margin: 14px 0; border: 0; }
+  section {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 18px; padding: 20px 22px; margin-bottom: 14px;
+  }
+  h2 {
+    font-size: .74rem; font-weight: 600; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--gold-text); margin: 0 0 10px;
+  }
+  section p { margin: 0 0 12px; color: var(--text-2); }
   section p:last-child { margin-bottom: 0; }
-  a { color: var(--accent); }
-  footer { color: var(--muted); font-size: .85rem; margin-top: 32px; }
+  a { color: var(--teal); font-weight: 600; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+  .links a {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 0; border-top: 1px solid var(--border); text-decoration: none;
+  }
+  .links a:first-child { border-top: 0; padding-top: 2px; }
+  .links a::after { content: "›"; color: var(--text-3); font-size: 1.3rem; font-weight: 400; }
+  footer { color: var(--text-3); font-size: .85rem; margin-top: 28px; text-align: center; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Kull — Privacy Policy</h1>
-  <p class="updated">Last updated 4 November 2026</p>
-
-  <p class="intro">
-    Kull helps you keep your Salah Streak. You need an account to sign in, but
-    your prayer records and prayer times stay on your phone and work without a
-    network, and its privacy rules follow from that. The same text
-    is in the app itself, at Settings → About → Privacy policy.
-  </p>
-
+  <a class="brand" href="index.html">Kull</a>
+  <div class="hero">
+    <p class="eyebrow">Privacy policy</p>
+    <h1>Your prayers stay on your phone</h1>
+    <p>Kull helps you keep your Salah Streak. You need an account to sign in, but your prayer records and prayer times stay on your phone and work without a network, and its privacy rules follow from that. The same text is in the app itself, at Settings → About → Privacy policy.</p>
+      <hr class="rule"><p class="eyebrow" style="margin:0">Last updated 4 November 2026</p>
+  </div>
   <section>
     <h2>What never leaves your phone</h2>
     <p>
@@ -74,7 +104,6 @@
       to. Without that file, uninstalling the app removes this data.
     </p>
   </section>
-
   <section>
     <h2>Your account</h2>
     <p>
@@ -85,7 +114,6 @@
       only as a cryptographic hash.
     </p>
   </section>
-
   <section>
     <h2>Location</h2>
     <p>
@@ -101,7 +129,6 @@
       not uploaded and is left out of backup files. We do not keep location history.
     </p>
   </section>
-
   <section>
     <h2>No tracking, no ads</h2>
     <p>
@@ -110,7 +137,6 @@
       here is used for advertising.
     </p>
   </section>
-
   <section>
     <h2>Deleting your data</h2>
     <p>
@@ -130,7 +156,6 @@
       Step by step, including what is deleted: <a href="delete-account.html">Delete your Kull account</a>.
     </p>
   </section>
-
   <section>
     <h2>Children</h2>
     <p>
@@ -138,7 +163,6 @@
       collect personal data from them.
     </p>
   </section>
-
   <section>
     <h2>Contact</h2>
     <p>
